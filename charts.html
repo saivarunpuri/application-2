@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Charts</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .chart-container {
+            width: 80%;
+            height: 400px;
+            margin: 20px auto;
+        }
+
+        .navigation-link {
+            margin-top: 20px;
+        }
+
+        .navigation-link a {
+            font-size: 18px;
+            text-decoration: none;
+            color: #000;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Weather Summary and Historical Trends</h1>
+
+    <div class="chart-container">
+        <canvas id="weatherSummaryChart"></canvas> <!-- Daily Weather Summary Chart -->
+    </div>
+
+    <div class="chart-container">
+        <canvas id="historicalTrendChart"></canvas> <!-- Historical Weather Trends -->
+    </div>
+
+    <!-- Link to go back to the forecast page -->
+    <div class="navigation-link">
+        <a href="index.html">Go Back to Forecast</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./chart.js"></script>
+</body>
+</html>
